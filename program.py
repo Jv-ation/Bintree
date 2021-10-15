@@ -20,7 +20,6 @@ for i in range(len(tree_list)):
             
             
             if main_list[next_node][1] == '' and main_list[next_node][2] == '':
-                print("running first if")
                 if int(main_list[next_node][0]) > new_node:
                     main_list[next_node][1] = new_node
                     new_cnode = [new_node, "", ""]
@@ -35,7 +34,6 @@ for i in range(len(tree_list)):
                 break
             
             elif main_list[next_node][1] == '':
-                print("running first elif")
                 if int(main_list[next_node][0]) > new_node:
                     main_list[next_node][1] = new_node
                     new_cnode = [new_node, "", ""]
@@ -52,7 +50,6 @@ for i in range(len(tree_list)):
                             pass
             
             elif main_list[next_node][2] == '':
-                print("running 2nd elif")
                 if int(main_list[next_node][0]) < new_node:
                     main_list[next_node][2] = new_node
                     new_cnode = [new_node, "", ""]
